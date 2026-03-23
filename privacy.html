@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StrikeWindow – Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #060E20;
+      color: #CBD5E1;
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid #1E2D4A;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    header svg {
+      flex-shrink: 0;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #00E5FF;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      font-size: 0.85rem;
+      color: #64748B;
+      margin-top: 2px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #E2E8F0;
+      margin: 40px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #1E2D4A;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #00E5FF;
+      margin: 20px 0 6px;
+    }
+
+    p { margin-bottom: 12px; }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    a { color: #00E5FF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 0.9rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 10px 12px;
+      background: #0D1E3A;
+      color: #94A3B8;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #1E2D4A;
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .chip {
+      display: inline-block;
+      background: #00E5FF22;
+      color: #00E5FF;
+      border: 1px solid #00E5FF44;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .effective {
+      font-size: 0.85rem;
+      color: #64748B;
+      margin-bottom: 32px;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 48px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid #1E2D4A;
+      font-size: 0.8rem;
+      color: #475569;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Moon + fishing rod icon (simplified SVG) -->
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="12" fill="#0D1E3A"/>
+      <path d="M32 10 Q10 14 10 28 Q10 38 22 40 Q10 36 12 24 Q14 12 32 10Z"
+            fill="#00E5FF" opacity="0.9"/>
+      <path d="M30 10 Q34 20 28 30" stroke="#00E5FF" stroke-width="1.5"
+            stroke-linecap="round" fill="none"/>
+      <line x1="28" y1="30" x2="30" y2="40" stroke="#00E5FF" stroke-width="1"
+            stroke-linecap="round"/>
+      <circle cx="30" cy="36" r="2" fill="#00E5FF" opacity="0.7"/>
+    </svg>
+    <div>
+      <h1>StrikeWindow</h1>
+      <p>Privacy Policy</p>
+    </div>
+  </header>
+
+  <main>
+    <p class="effective">Effective Date: March 22, 2026</p>
+
+    <p>StrikeWindow is a solunar activity and weather application for fishing and hunting. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+
+    <h2>Data We Collect</h2>
+
+    <h3>Location Data</h3>
+    <ul>
+      <li><strong>What:</strong> GPS coordinates or manually entered location</li>
+      <li><strong>Why:</strong> To calculate solunar activity scores, weather forecasts, and sunrise/sunset times specific to your location</li>
+      <li><strong>Storage:</strong> Saved locally on your device only — never transmitted to our servers</li>
+    </ul>
+
+    <h3>Usage Data (Firebase)</h3>
+    <ul>
+      <li><strong>What:</strong> App feature flag configuration fetched from Firebase Remote Config</li>
+      <li><strong>Why:</strong> To remotely configure app features without requiring an update</li>
+      <li>Firebase may collect anonymous diagnostic data per <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
+      <li>No personally identifiable information is sent to Firebase</li>
+    </ul>
+
+    <h3>Weather Data</h3>
+    <ul>
+      <li><strong>What:</strong> Your coordinates are sent to Open-Meteo to retrieve forecasts</li>
+      <li><strong>Why:</strong> To display weather conditions for your location</li>
+      <li>Open-Meteo is a free, open-source API that does not require account creation. See <a href="https://open-meteo.com/en/terms" target="_blank">Open-Meteo's privacy policy</a></li>
+    </ul>
+
+    <h3>Map &amp; Geocoding Data</h3>
+    <ul>
+      <li><strong>What:</strong> Your coordinates are used to fetch map tiles and reverse geocode locations</li>
+      <li><strong>Why:</strong> To display maps and convert coordinates to place names</li>
+      <li>Provider: OpenStreetMap / Nominatim. See <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OpenStreetMap's privacy policy</a></li>
+    </ul>
+
+    <h3>On-Device AI <span class="chip">Android only</span></h3>
+    <ul>
+      <li>Solunar and weather data is processed locally by Gemini Nano (Google AI Core)</li>
+      <li>This generates a plain-language daily activity summary</li>
+      <li><strong>This processing happens entirely on your device.</strong> No data is sent to external AI servers by StrikeWindow.</li>
+    </ul>
+
+    <h2>Data We Do NOT Collect</h2>
+    <ul>
+      <li>We do not create user accounts</li>
+      <li>We do not collect your name, email, or any contact information</li>
+      <li>We do not sell or share your data with third parties for advertising</li>
+      <li>We do not track you across other apps or websites</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>All app data (saved locations, preferences) is stored locally on your device. We have no access to this data.</p>
+
+    <h2>Third-Party Services</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Purpose</th>
+          <th>Privacy Policy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Remote Config</td>
+          <td>Feature configuration</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td>Open-Meteo</td>
+          <td>Weather forecasts</td>
+          <td><a href="https://open-meteo.com/en/terms" target="_blank">Open-Meteo Terms</a></td>
+        </tr>
+        <tr>
+          <td>OpenStreetMap / Nominatim</td>
+          <td>Maps and geocoding</td>
+          <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td>Google AI Core (Gemini Nano)</td>
+          <td>On-device AI summary</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Children's Privacy</h2>
+    <p>StrikeWindow is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy as the app evolves. The effective date at the top will always reflect the most recent version. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, contact us at: <a href="mailto:deadactorsoftware+privacy@gmail.com">deadactorsoftware+privacy@gmail.com</a></p>
+  </main>
+
+  <footer>
+    &copy; 2026 StrikeWindow. All rights reserved.
+  </footer>
+
+</body>
+</html>
