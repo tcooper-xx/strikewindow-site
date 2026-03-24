@@ -217,6 +217,23 @@
             significant effect once weather, season, and water temperature are accounted for.</p>
           <p>The most pragmatic view: solunar periods are one useful signal among several. On a day with good weather and favorable conditions, timing your fishing 
             or hunting around a major period is a reasonable edge — not a guarantee. No app can promise a strike.</p>
+          <p>One thing I've always said is any excuse to get out on the water is a good excuse!  Knowledge of an upcoming solunar period might be the trigger to get you
+          and your buddies out of comp and on the water on a lazy third day of the trip.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>I've heard of Majors and Minors, what's this Prime and golden stuff?</summary>
+        <div class="answer">
+          <p>Major periods are when the moon is directly overhead or under foot.</p>
+          <p>Minor periods are when the moon is rising or setting</p>
+          <p>What we in the app consider a "Prime" is when a major occurs when the sun is rising or setting,  The idea is that the effect is enhanced by sunrise or sunset</p>
+          <p>Golden periods are when a minor period aligns with sunrise or sunset, same idea as a "Prime" but the minor is beleived to have a lesser effect than a major, and 'sub prime'
+          did not sound like a good descriptor</p>
+          <p>Super Golden periods are when the moonrises as the sun sets and the moon is near full.  This may not have a big effect on your fishing, but from experience, 
+          it is a great time to be on the lake, because it's usually at least a spectacular view.  A large part of what a lot of us do in the outdoors is less about getting our catch
+          or filling our tag, it's experiencing the amazing natural beauty of the places we are at.   When I fish at my favorite lake it isn't the first cast or cast that lets me know 
+          I'm where I should be, it's the first time I hear a loon call out.</p>
         </div>
       </details>
     </div>
@@ -233,6 +250,7 @@
           <p>StrikeWindow uses <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a>, a free and open-source weather API that pulls from global numerical weather models (GFS, ECMWF, and others). These are the same underlying models used by most consumer weather apps.</p>
           <p>All forecasts degrade in accuracy the further out they project. The first 2–3 days are generally reliable; beyond 7 days, treat the forecast as a broad trend rather than a precise prediction. Localized effects — mountain valleys, coastal microclimates, lake-effect patterns — are difficult for global models to resolve at a hyperlocal level.</p>
           <p>For dates beyond the 16-day forecast window, StrikeWindow automatically falls back to historical climate averages for your location, which give you a sense of typical conditions but are not a forecast.</p>
+          <p>Always use your senses!  If you see or hear a storm coming get to safety.  Sometimes things happen quickly and unexpectedly, if the wind starts to pickup on a big bay, get yourself close to shore.</p>
         </div>
       </details>
 
@@ -241,6 +259,7 @@
         <div class="answer">
           <p>The current radar view shows the most recently available radar frame for your area. Animating radar requires fetching, storing, and looping through many sequential images — which adds meaningful data usage and battery drain, particularly in the background.</p>
           <p>Animated radar is something we want to add, and the groundwork is already in place. It's a matter of getting the implementation right without impacting performance or data costs for users on limited plans.</p>
+          <P>Right now the provider we are using has shown to be unreliable in allowing retreival of many frames at once.</P>
         </div>
       </details>
 
