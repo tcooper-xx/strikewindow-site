@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrikeWindow — FAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #060E20;
+      --surface:      #0F1930;
+      --surface-high: #1C2640;
+      --border:       rgba(255, 255, 255, 0.07);
+      --primary:      #5BF4DE;
+      --secondary:    #699CFF;
+      --text:         #DEE5FF;
+      --text-muted:   #8892B0;
+      --radius:       12px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      min-height: 100vh;
+      padding: 48px 16px 80px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(28px, 6vw, 40px);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 14px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      padding-left: 4px;
+    }
+
+    /* ── FAQ items ── */
+    .faq-group {
+      margin-bottom: 40px;
+    }
+
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 8px;
+      transition: background 0.15s;
+    }
+
+    details[open] {
+      background: var(--surface-high);
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      cursor: pointer;
+      list-style: none;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: '';
+      display: block;
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      background-color: var(--text-muted);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
+      mask-size: cover;
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
+      -webkit-mask-size: cover;
+      transition: transform 0.2s ease, background-color 0.15s;
+    }
+
+    details[open] > summary::after {
+      transform: rotate(180deg);
+      background-color: var(--primary);
+    }
+
+    details[open] > summary {
+      color: var(--primary);
+    }
+
+    .answer {
+      padding: 0 20px 20px;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .answer p + p {
+      margin-top: 10px;
+    }
+
+    .answer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .answer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 64px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <p class="eyebrow">StrikeWindow</p>
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about solunar theory, the forecast data, and how the app works.</p>
+    </header>
+
+    <!-- Solunar Theory -->
+    <div class="faq-group">
+      <p class="section-label">Solunar Theory</p>
+
+      <details>
+        <summary>What is Solunar theory?</summary>
+        <div class="answer">
+          <p>Solunar theory was developed by outdoor writer John Alden Knight in 1926. It proposes that fish and wildlife are most active during specific windows 
+            driven by the moon's position relative to the Earth and sun.</p>
+          <p>The theory identifies four daily periods. Two <strong>major periods</strong> occur when the moon is directly overhead (lunar transit) or directly 
+            underfoot (opposite transit) — these typically last 1–2 hours each. Two shorter <strong>minor periods</strong> coincide with moonrise and moonset. 
+            Activity peaks near the center of each window.</p>
+          <p>StrikeWindow calculates these periods for your exact location and date using precise astronomical positioning, then weights them by moon phase to 
+            produce an overall day score.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does Solunar theory actually work?</summary>
+        <div class="answer">
+          <p>The honest answer: it depends on who you ask, and what you mean by "work."</p>
+          <p>Anecdotally, generations of anglers and hunters have found solunar periods useful, and many seasoned guides plan their outings around them. There is 
+            also solid science behind lunar influence — moon phase drives tidal cycles, which directly affect baitfish movement and feeding patterns in coastal and 
+            tidal waters.</p>
+          <p>Controlled scientific studies are mixed. Some show statistically meaningful correlations between lunar position and fish activity; others find no 
+            significant effect once weather, season, and water temperature are accounted for.</p>
+          <p>The most pragmatic view: solunar periods are one useful signal among several. On a day with good weather and favorable conditions, timing your fishing 
+            or hunting around a major period is a reasonable edge — not a guarantee. No app can promise a strike.</p>
+        </div>
+      </details>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Weather -->
+    <div class="faq-group">
+      <p class="section-label">Weather</p>
+
+      <details>
+        <summary>Why isn't the forecast more accurate?</summary>
+        <div class="answer">
+          <p>StrikeWindow uses <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a>, a free and open-source weather API that pulls from global numerical weather models (GFS, ECMWF, and others). These are the same underlying models used by most consumer weather apps.</p>
+          <p>All forecasts degrade in accuracy the further out they project. The first 2–3 days are generally reliable; beyond 7 days, treat the forecast as a broad trend rather than a precise prediction. Localized effects — mountain valleys, coastal microclimates, lake-effect patterns — are difficult for global models to resolve at a hyperlocal level.</p>
+          <p>For dates beyond the 16-day forecast window, StrikeWindow automatically falls back to historical climate averages for your location, which give you a sense of typical conditions but are not a forecast.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Why aren't radar images animated?</summary>
+        <div class="answer">
+          <p>The current radar view shows the most recently available radar frame for your area. Animating radar requires fetching, storing, and looping through many sequential images — which adds meaningful data usage and battery drain, particularly in the background.</p>
+          <p>Animated radar is something we want to add, and the groundwork is already in place. It's a matter of getting the implementation right without impacting performance or data costs for users on limited plans.</p>
+        </div>
+      </details>
+
+
+    </div>
+
+    <div class="faq-group">
+      <p class="section-label">AI Usage</p>
+
+      <details>
+        <summary>Is the Intel Breifing AI generated?</summary>
+        <div class="answer">
+          <p>Yes.  It uses an on-device AI model to attempt to distill the forecast and solunar data for the day into a useable summary.  The prompt is crafted to try to eliminate silly results,
+            like telling you to get out on the water when it's freezing, but the model can't look out the window and see that the lake is frozen, or know things like the season is closed.  
+            So your miliage may vary there.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Why can't I see the Intel Briefing?</summary>
+        <div class="answer">
+          <p>Only certain devices are supported.  You must have AiCore installed on an Android device, or be using a more recent iOS device.  It was important to use a local model, and that 
+            ability isn't available on every device.  If your device isn't supported or AiCore is not installed, or disabled the functionality is hidden.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>AI?  Is this app AI slop?</summary>
+        <div class="answer">
+          <p>
+            I'm a solo developer who has 30+ years experience writing software.   This app is something that has been rolling around in my head in some form since I 
+            first got my hands on a phone with data and a color screen.  I wrote my first solunar library around 2007, using examples from the 60's and 70's made available by the US Naval
+            Observatory.  
+          </p>
+          <p>
+            I have built quite literally dozens of versions of this app over the years, and have never been happy enough with the end result to release it to anyone.  It didn't have the 
+            polish, or it didn't have this or that peice of data that I thought was needed to make it really useful.
+          </p>
+          <p> 
+          AI tools made it possible for me to get the application over the finish line.  It's riduculously useful for fixing small display issues or templating out a screen.   
+          Things that are tedious can become a lot more simple, This is not an example of AI doing the job of a human, this is an example of AI helping a human do a job (that they've 
+          wanted to do for years, but could never find the time to do it right).
+          </p>
+          <p>
+          Rest assured, the code in this app is reviewed by myself, and up to my standards in terms of being maintainable and of quality, even if I haven't keyed in every line of code.
+          </p>
+
+          <p>Every application of any complexity out there for the past 20 years or so has some sort of generated code inside of it.  Whether it's a simple tool that builds generated 
+            classes, the use of intellisense in a developer's IDE, or something that is completely 'vibe coded' it's a reality of how things are and have been done for a long time.     </p>
+
+
+        </div>
+      </details>
+
+
+    </div>
+
+    <footer>
+      <p>Still have a question? <a href="mailto:support@strikewindow.app">Contact us</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
