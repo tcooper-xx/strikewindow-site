@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrikeWindow | Master the Water</title>
+  <meta name="description" content="Plan your day on the water and identify your catches with the most precise solunar and weather data for anglers and hunters.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px; /* Slightly rounded if the icon has a background */
+    }
+    .btn-disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      border: 1px solid var(--text-variant);
+      color: var(--text-variant);
+    }
+    .btn-disabled:hover {
+      transform: none;
+      box-shadow: none;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="brand-container">
+      <img src="assets/icon.png" alt="Loonar the mascot" class="brand-icon">
+      <div class="nav-brand">STRIKEWINDOW</div>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Master the Water.</h1>
+      <p class="hero-subtitle">The ultimate tool for anglers and hunters. Get highly precise solunar data, track historical weather conditions, and identify your catches — all before your line hits the water.</p>
+      <div class="hero-actions">
+        <button class="btn btn-outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M5 3l14 9-14 9V3z"/></svg>
+          <span>Get it on Google Play</span>
+        </button>
+        <button class="btn btn-outline btn-disabled" aria-disabled="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span>Coming soon to iOS</span>
+        </button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/Screenshot_1775215160.png" alt="StrikeWindow App Dashboard" class="app-mockup">
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="section-head">
+      <h2 class="section-title">Precision Data. Powerful Planning.</h2>
+      <p class="section-subtitle">Everything you need to predict the perfect time for a strike.</p>
+    </div>
+
+    <div class="feature-grid">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3 class="feature-title">Solunar & Weather</h3>
+        <p class="feature-desc">Check minor and major eating times combined with hyper-local weather. See exact conditions before you even step outside.</p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3 class="feature-title">Fish Identification</h3>
+        <p class="feature-desc">Unsure what you caught? Quickly identify your catch and catalog it, capturing the exact meteorological conditions at the moment of the strike.</p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3 class="feature-title">Future Planning</h3>
+        <p class="feature-desc">Plan trips weeks or months into the future using calculated solunar data and historical weather trends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Showcase / Screenshots Grid -->
+  <section class="showcase">
+    <div class="section-head">
+      <h2 class="section-title">A look inside</h2>
+    </div>
+    <div class="showcase-container">
+      <div class="showcase-grid">
+        <div class="showcase-item"><img src="assets/Screenshot_1775215137.png" alt="App interface screen 1"></div>
+        <div class="showcase-item"><img src="assets/Screenshot_1775215150.png" alt="App interface screen 2"></div>
+        <div class="showcase-item"><img src="assets/Screenshot_1775215156.png" alt="App interface screen 3"></div>
+        <div class="showcase-item"><img src="assets/Screenshot_1775215166.png" alt="App interface screen 4"></div>
+        <div class="showcase-item"><img src="assets/Screenshot_1775215170.png" alt="App interface screen 5"></div>
+        <div class="showcase-item"><img src="assets/Screenshot_1775215178.png" alt="App interface screen 6"></div>
+        <div class="showcase-item"><img src="assets/Screenshot_1775215193.png" alt="App interface screen 7"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="brand-container" style="justify-content: center; margin-bottom: 0.5rem;">
+          <img src="assets/icon.png" alt="Loonar the mascot" class="brand-icon" style="width: 24px; height: 24px;">
+          <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0;">STRIKEWINDOW</h3>
+        </div>
+        <p>Your companion for the perfect cast.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 StrikeWindow App. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
