@@ -1,151 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StrikeWindow – Privacy Policy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrikeWindow | Privacy Policy</title>
+  <meta name="description" content="StrikeWindow privacy policy — what data we collect, how we use it, and your rights.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #060E20;
-      color: #CBD5E1;
-      line-height: 1.7;
-      padding: 0 16px 64px;
-    }
-
-    header {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 0 32px;
-      border-bottom: 1px solid #1E2D4A;
+    .brand-container {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
+      text-decoration: none;
     }
-
-    header img {
-      flex-shrink: 0;
-      width: 56px;
-      height: 56px;
-      border-radius: 14px;
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
     }
-
-    header h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #00E5FF;
-      letter-spacing: -0.5px;
+    .content-doc h3 {
+      font-size: 1rem;
+      color: var(--primary);
+      margin: 1.5rem 0 0.5rem;
     }
-
-    header p {
-      font-size: 0.85rem;
-      color: #64748B;
-      margin-top: 2px;
+    .content-doc ul {
+      padding-left: 1.5rem;
+      color: var(--text-variant);
+      margin-bottom: 1rem;
     }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding-top: 40px;
+    .content-doc ul li {
+      margin-bottom: 0.4rem;
     }
-
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #E2E8F0;
-      margin: 40px 0 12px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #1E2D4A;
-    }
-
-    h3 {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #00E5FF;
-      margin: 20px 0 6px;
-    }
-
-    p { margin-bottom: 12px; }
-
-    ul {
-      padding-left: 20px;
-      margin-bottom: 12px;
-    }
-
-    ul li { margin-bottom: 6px; }
-
-    a { color: #00E5FF; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    table {
+    .content-doc table {
       width: 100%;
       border-collapse: collapse;
-      margin: 12px 0 24px;
+      margin: 1rem 0 1.5rem;
       font-size: 0.9rem;
     }
-
-    th {
+    .content-doc th {
       text-align: left;
       padding: 10px 12px;
-      background: #0D1E3A;
-      color: #94A3B8;
+      background: var(--bg);
+      color: var(--text-variant);
       font-weight: 600;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
-    td {
+    .content-doc td {
       padding: 10px 12px;
-      border-bottom: 1px solid #1E2D4A;
+      border-bottom: 1px solid var(--border-color);
       vertical-align: top;
+      color: var(--text-variant);
     }
-
-    tr:last-child td { border-bottom: none; }
-
+    .content-doc tr:last-child td {
+      border-bottom: none;
+    }
     .chip {
       display: inline-block;
-      background: #00E5FF22;
-      color: #00E5FF;
-      border: 1px solid #00E5FF44;
+      background: rgba(91, 244, 222, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(91, 244, 222, 0.3);
       border-radius: 4px;
       font-size: 0.75rem;
       font-weight: 600;
       padding: 2px 8px;
       letter-spacing: 0.5px;
     }
-
-    .effective {
+    .effective-date {
       font-size: 0.85rem;
-      color: #64748B;
-      margin-bottom: 32px;
-    }
-
-    footer {
-      max-width: 720px;
-      margin: 48px auto 0;
-      padding-top: 24px;
-      border-top: 1px solid #1E2D4A;
-      font-size: 0.8rem;
-      color: #475569;
-      text-align: center;
+      color: var(--text-variant);
+      margin-bottom: 1.5rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="icon.png" alt="StrikeWindow" />
-    <div>
-      <h1>StrikeWindow</h1>
-      <p>Privacy Policy</p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="brand-container">
+      <img src="assets/icon.png" alt="Loonar the mascot" class="brand-icon">
+      <div class="nav-brand">STRIKEWINDOW</div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <p class="effective">Effective Date: March 24, 2026</p>
+  <!-- Privacy Content -->
+  <div class="content-doc">
+
+    <div class="section-head" style="text-align: left; margin-bottom: 2rem;">
+      <h2 class="section-title">Privacy Policy</h2>
+    </div>
+
+    <p class="effective-date">Effective Date: March 24, 2026</p>
 
     <p>StrikeWindow is a solunar activity and weather application for fishing and hunting. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
 
@@ -258,11 +212,30 @@
 
     <h2>Contact</h2>
     <p>If you have questions about this policy, contact us at: <a href="mailto:deadactorsoftware+privacy@gmail.com">deadactorsoftware+privacy@gmail.com</a></p>
-  </main>
 
+  </div>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2026 StrikeWindow. All rights reserved.
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="brand-container" style="justify-content: center; margin-bottom: 0.5rem;">
+          <img src="assets/icon.png" alt="Loonar the mascot" class="brand-icon" style="width: 24px; height: 24px;">
+          <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0;">STRIKEWINDOW</h3>
+        </div>
+        <p>Your companion for the perfect cast.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#features">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 StrikeWindow App. All rights reserved.
+    </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
